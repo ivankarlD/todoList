@@ -25,7 +25,7 @@
     {{-- Sweet Alert --}}
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
  
-
+    @yield('task.style')
 </head>
 <body>
     <div id="app">
