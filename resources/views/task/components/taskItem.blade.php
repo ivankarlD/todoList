@@ -9,7 +9,7 @@
                 <button class="taskBtn col" onclick="edit({{$task->id}})">
                     <p class=" m-0 text-truncate text-start">{{ $task->task_content }}</p>
                 </button>
-                <p class="col-md-3 m-0">{{ $task->task_date }}</p>
+                <p class="col-md-2 m-0">{{ \Carbon\Carbon::parse($task->task_date)->format('F d, Y'); }}</p>
             </div>
         </div>
     @endforeach
@@ -31,7 +31,7 @@
                 <button class="taskBtn col" onclick="edit({{$task->id}})">
                     <p class="m-0 text-truncate text-start">{{ $task->task_content }}</p>
                 </button>
-                <p class="col-md-3 m-0">{{ $task->task_date }}</p>
+                <p class="col-md-2 m-0">{{ \Carbon\Carbon::parse($task->task_date)->format('F d, Y'); }}</p>
             </div>
         </div>
     @endforeach
